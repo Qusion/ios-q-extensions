@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "QExtensions"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "QDev - Tools and extensions."
   spec.homepage     = "https://github.com/QusionDev/ios-QExtensions/blob/master/README.md"
   spec.license      = {
