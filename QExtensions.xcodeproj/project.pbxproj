@@ -11,6 +11,27 @@
 		7A386FE023339F3400B7BADE /* QExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FDF23339F3400B7BADE /* QExtensionsTests.swift */; };
 		7A386FE223339F3400B7BADE /* QExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A386FD423339F3400B7BADE /* QExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A386FEC2333A66600B7BADE /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FEB2333A66600B7BADE /* UIColor+.swift */; };
+		7A386FF22334B37100B7BADE /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FF12334B37100B7BADE /* Date+.swift */; };
+		7A386FF52334B38E00B7BADE /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FF42334B38E00B7BADE /* DateFormatter+.swift */; };
+		7A386FF82334B8EB00B7BADE /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FF72334B8EB00B7BADE /* Reusable.swift */; };
+		7A386FF92334B8EB00B7BADE /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FF72334B8EB00B7BADE /* Reusable.swift */; };
+		7A386FFB2334C02600B7BADE /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FFA2334C02600B7BADE /* UIAlertController+.swift */; };
+		7A386FFE2334C0A200B7BADE /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FFD2334C0A200B7BADE /* UIButton+.swift */; };
+		7A3870012334C23800B7BADE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870002334C23800B7BADE /* Logger.swift */; };
+		7A3870022334C23800B7BADE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870002334C23800B7BADE /* Logger.swift */; };
+		7A3870042334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */; };
+		7A3870052334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */; };
+		7A38700723350F1C00B7BADE /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700623350F1C00B7BADE /* Bundle+.swift */; };
+		7A38700923350FA600B7BADE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700823350FA600B7BADE /* GradientView.swift */; };
+		7A38700B2335104500B7BADE /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700A2335104500B7BADE /* NSAttributedString+.swift */; };
+		7A38700D2335112900B7BADE /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700C2335112900B7BADE /* String+.swift */; };
+		7A38700F233689AE00B7BADE /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700E233689AE00B7BADE /* UIDevice+.swift */; };
+		7A38701123368A1900B7BADE /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38701023368A1900B7BADE /* UIImage+.swift */; };
+		7A38701323368AE900B7BADE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38701223368AE900B7BADE /* UIView+.swift */; };
+		7A700A0D2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */; };
+		7A700A0E2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */; };
+		7A700A102334ED5D0075B5EA /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0F2334ED5D0075B5EA /* AnimatedButton.swift */; };
+		7A700A112334ED5D0075B5EA /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0F2334ED5D0075B5EA /* AnimatedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +52,22 @@
 		7A386FDF23339F3400B7BADE /* QExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QExtensionsTests.swift; sourceTree = "<group>"; };
 		7A386FE123339F3400B7BADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A386FEB2333A66600B7BADE /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		7A386FF12334B37100B7BADE /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		7A386FF42334B38E00B7BADE /* DateFormatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
+		7A386FF72334B8EB00B7BADE /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		7A386FFA2334C02600B7BADE /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
+		7A386FFD2334C0A200B7BADE /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		7A3870002334C23800B7BADE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderKeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		7A38700623350F1C00B7BADE /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		7A38700823350FA600B7BADE /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		7A38700A2335104500B7BADE /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
+		7A38700C2335112900B7BADE /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		7A38700E233689AE00B7BADE /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
+		7A38701023368A1900B7BADE /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		7A38701223368AE900B7BADE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		7A700A0F2334ED5D0075B5EA /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +110,14 @@
 		7A386FD323339F3400B7BADE /* QExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				7A386FD423339F3400B7BADE /* QExtensions.h */,
-				7A386FD523339F3400B7BADE /* Info.plist */,
-				7A386FEB2333A66600B7BADE /* UIColor+.swift */,
+				7A38701423368B3C00B7BADE /* Extensions */,
+				7A386FED2334B2E800B7BADE /* Supporting files */,
+				7A386FF72334B8EB00B7BADE /* Reusable.swift */,
+				7A3870002334C23800B7BADE /* Logger.swift */,
+				7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */,
+				7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */,
+				7A700A0F2334ED5D0075B5EA /* AnimatedButton.swift */,
+				7A38700823350FA600B7BADE /* GradientView.swift */,
 			);
 			path = QExtensions;
 			sourceTree = "<group>";
@@ -87,6 +129,33 @@
 				7A386FE123339F3400B7BADE /* Info.plist */,
 			);
 			path = QExtensionsTests;
+			sourceTree = "<group>";
+		};
+		7A386FED2334B2E800B7BADE /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				7A386FD423339F3400B7BADE /* QExtensions.h */,
+				7A386FD523339F3400B7BADE /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		7A38701423368B3C00B7BADE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7A386FF12334B37100B7BADE /* Date+.swift */,
+				7A386FEB2333A66600B7BADE /* UIColor+.swift */,
+				7A386FF42334B38E00B7BADE /* DateFormatter+.swift */,
+				7A386FFA2334C02600B7BADE /* UIAlertController+.swift */,
+				7A386FFD2334C0A200B7BADE /* UIButton+.swift */,
+				7A38700623350F1C00B7BADE /* Bundle+.swift */,
+				7A38700A2335104500B7BADE /* NSAttributedString+.swift */,
+				7A38700C2335112900B7BADE /* String+.swift */,
+				7A38701023368A1900B7BADE /* UIImage+.swift */,
+				7A38700E233689AE00B7BADE /* UIDevice+.swift */,
+				7A38701223368AE900B7BADE /* UIView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +267,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3870042334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */,
+				7A38700F233689AE00B7BADE /* UIDevice+.swift in Sources */,
+				7A386FF82334B8EB00B7BADE /* Reusable.swift in Sources */,
+				7A38700923350FA600B7BADE /* GradientView.swift in Sources */,
+				7A386FFE2334C0A200B7BADE /* UIButton+.swift in Sources */,
+				7A38701123368A1900B7BADE /* UIImage+.swift in Sources */,
+				7A386FF52334B38E00B7BADE /* DateFormatter+.swift in Sources */,
 				7A386FEC2333A66600B7BADE /* UIColor+.swift in Sources */,
+				7A3870012334C23800B7BADE /* Logger.swift in Sources */,
+				7A38701323368AE900B7BADE /* UIView+.swift in Sources */,
+				7A38700723350F1C00B7BADE /* Bundle+.swift in Sources */,
+				7A386FF22334B37100B7BADE /* Date+.swift in Sources */,
+				7A700A0D2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */,
+				7A700A102334ED5D0075B5EA /* AnimatedButton.swift in Sources */,
+				7A386FFB2334C02600B7BADE /* UIAlertController+.swift in Sources */,
+				7A38700D2335112900B7BADE /* String+.swift in Sources */,
+				7A38700B2335104500B7BADE /* NSAttributedString+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3870052334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */,
+				7A386FF92334B8EB00B7BADE /* Reusable.swift in Sources */,
 				7A386FE023339F3400B7BADE /* QExtensionsTests.swift in Sources */,
+				7A3870022334C23800B7BADE /* Logger.swift in Sources */,
+				7A700A0E2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */,
+				7A700A112334ED5D0075B5EA /* AnimatedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +444,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = QExtensions/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QExtensions/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +471,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = QExtensions/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QExtensions/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

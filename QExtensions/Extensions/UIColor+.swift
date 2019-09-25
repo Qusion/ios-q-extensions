@@ -10,19 +10,20 @@ import UIKit
 
 extension UIColor {
     
+    /// Initializers for creating hex color
     convenience init(hexString: String) {
         
-        // Trim leading '#' if needed
+        /// Trim leading '#' if needed
         var cleanedHexString = hexString
         if hexString.hasPrefix("#") {
             cleanedHexString = String(hexString.dropFirst())
         }
         
-        // String -> UInt32
+        /// String -> UInt32
         var rgbValue: UInt32 = 0
         Scanner(string: cleanedHexString).scanHexInt32(&rgbValue)
         
-        // UInt32 -> R,G,B
+        /// UInt32 -> R,G,B
         let red = CGFloat((rgbValue >> 16) & 0xff) / 255.0
         let green = CGFloat((rgbValue >> 08) & 0xff) / 255.0
         let blue = CGFloat((rgbValue >> 00) & 0xff) / 255.0
@@ -30,7 +31,8 @@ extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
-    static func blend(color1: UIColor, intensity1: CGFloat = 0.5, color2: UIColor, intensity2: CGFloat = 0.5) -> UIColor {
+    /// Initializers for creating blend color
+    public static func blend(color1: UIColor, intensity1: CGFloat = 0.5, color2: UIColor, intensity2: CGFloat = 0.5) -> UIColor {
         
         let total = intensity1 + intensity2
         let l1 = intensity1/total
