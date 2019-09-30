@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A2B8843233CD47E00996E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B8842233CD47E00996E09 /* ViewController.swift */; };
+		7A2B8845233CD52000996E09 /* ViewControllerNoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B8844233CD52000996E09 /* ViewControllerNoVM.swift */; };
+		7A2B8847233CD6AF00996E09 /* ViewControllerStyleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B8846233CD6AF00996E09 /* ViewControllerStyleable.swift */; };
+		7A2B8849233CD72E00996E09 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B8848233CD72E00996E09 /* AppStyle.swift */; };
 		7A386FDB23339F3400B7BADE /* QExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A386FD123339F3400B7BADE /* QExtensions.framework */; };
 		7A386FE023339F3400B7BADE /* QExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FDF23339F3400B7BADE /* QExtensionsTests.swift */; };
 		7A386FE223339F3400B7BADE /* QExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A386FD423339F3400B7BADE /* QExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,7 +22,6 @@
 		7A386FFB2334C02600B7BADE /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FFA2334C02600B7BADE /* UIAlertController+.swift */; };
 		7A386FFE2334C0A200B7BADE /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FFD2334C0A200B7BADE /* UIButton+.swift */; };
 		7A3870012334C23800B7BADE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870002334C23800B7BADE /* Logger.swift */; };
-		7A3870022334C23800B7BADE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870002334C23800B7BADE /* Logger.swift */; };
 		7A3870042334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */; };
 		7A3870052334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */; };
 		7A38700723350F1C00B7BADE /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700623350F1C00B7BADE /* Bundle+.swift */; };
@@ -28,6 +31,10 @@
 		7A38700F233689AE00B7BADE /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700E233689AE00B7BADE /* UIDevice+.swift */; };
 		7A38701123368A1900B7BADE /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38701023368A1900B7BADE /* UIImage+.swift */; };
 		7A38701323368AE900B7BADE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38701223368AE900B7BADE /* UIView+.swift */; };
+		7A5D0B96233BA874003CC100 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0B95233BA874003CC100 /* UIViewController.swift */; };
+		7A5D0B9E233BB11A003CC100 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0B9D233BB11A003CC100 /* FlowCoordinator.swift */; };
+		7A5D0BA0233BB169003CC100 /* QBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0B9F233BB169003CC100 /* QBase.swift */; };
+		7A5D0BA2233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0BA1233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift */; };
 		7A700A0D2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */; };
 		7A700A0E2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */; };
 		7A700A102334ED5D0075B5EA /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0F2334ED5D0075B5EA /* AnimatedButton.swift */; };
@@ -45,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A2B8842233CD47E00996E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A2B8844233CD52000996E09 /* ViewControllerNoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNoVM.swift; sourceTree = "<group>"; };
+		7A2B8846233CD6AF00996E09 /* ViewControllerStyleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStyleable.swift; sourceTree = "<group>"; };
+		7A2B8848233CD72E00996E09 /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
 		7A386FD123339F3400B7BADE /* QExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A386FD423339F3400B7BADE /* QExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QExtensions.h; sourceTree = "<group>"; };
 		7A386FD523339F3400B7BADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +77,10 @@
 		7A38700E233689AE00B7BADE /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
 		7A38701023368A1900B7BADE /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		7A38701223368AE900B7BADE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		7A5D0B95233BA874003CC100 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		7A5D0B9D233BB11A003CC100 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		7A5D0B9F233BB169003CC100 /* QBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QBase.swift; sourceTree = "<group>"; };
+		7A5D0BA1233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorNoDeepLink.swift; sourceTree = "<group>"; };
 		7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
 		7A700A0F2334ED5D0075B5EA /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,10 +125,10 @@
 		7A386FD323339F3400B7BADE /* QExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				7A5D0B9C233BB10C003CC100 /* Base */,
 				7A38701423368B3C00B7BADE /* Extensions */,
 				7A386FED2334B2E800B7BADE /* Supporting files */,
 				7A386FF72334B8EB00B7BADE /* Reusable.swift */,
-				7A3870002334C23800B7BADE /* Logger.swift */,
 				7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */,
 				7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */,
 				7A700A0F2334ED5D0075B5EA /* AnimatedButton.swift */,
@@ -154,8 +169,24 @@
 				7A38701023368A1900B7BADE /* UIImage+.swift */,
 				7A38700E233689AE00B7BADE /* UIDevice+.swift */,
 				7A38701223368AE900B7BADE /* UIView+.swift */,
+				7A5D0B95233BA874003CC100 /* UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7A5D0B9C233BB10C003CC100 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7A5D0B9D233BB11A003CC100 /* FlowCoordinator.swift */,
+				7A5D0B9F233BB169003CC100 /* QBase.swift */,
+				7A5D0BA1233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift */,
+				7A3870002334C23800B7BADE /* Logger.swift */,
+				7A2B8842233CD47E00996E09 /* ViewController.swift */,
+				7A2B8844233CD52000996E09 /* ViewControllerNoVM.swift */,
+				7A2B8846233CD6AF00996E09 /* ViewControllerStyleable.swift */,
+				7A2B8848233CD72E00996E09 /* AppStyle.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,19 +299,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A3870042334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */,
+				7A5D0BA2233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift in Sources */,
 				7A38700F233689AE00B7BADE /* UIDevice+.swift in Sources */,
+				7A5D0B96233BA874003CC100 /* UIViewController.swift in Sources */,
+				7A2B8843233CD47E00996E09 /* ViewController.swift in Sources */,
 				7A386FF82334B8EB00B7BADE /* Reusable.swift in Sources */,
 				7A38700923350FA600B7BADE /* GradientView.swift in Sources */,
 				7A386FFE2334C0A200B7BADE /* UIButton+.swift in Sources */,
 				7A38701123368A1900B7BADE /* UIImage+.swift in Sources */,
+				7A5D0B9E233BB11A003CC100 /* FlowCoordinator.swift in Sources */,
 				7A386FF52334B38E00B7BADE /* DateFormatter+.swift in Sources */,
 				7A386FEC2333A66600B7BADE /* UIColor+.swift in Sources */,
+				7A2B8847233CD6AF00996E09 /* ViewControllerStyleable.swift in Sources */,
 				7A3870012334C23800B7BADE /* Logger.swift in Sources */,
 				7A38701323368AE900B7BADE /* UIView+.swift in Sources */,
+				7A2B8845233CD52000996E09 /* ViewControllerNoVM.swift in Sources */,
 				7A38700723350F1C00B7BADE /* Bundle+.swift in Sources */,
 				7A386FF22334B37100B7BADE /* Date+.swift in Sources */,
+				7A5D0BA0233BB169003CC100 /* QBase.swift in Sources */,
 				7A700A0D2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */,
 				7A700A102334ED5D0075B5EA /* AnimatedButton.swift in Sources */,
+				7A2B8849233CD72E00996E09 /* AppStyle.swift in Sources */,
 				7A386FFB2334C02600B7BADE /* UIAlertController+.swift in Sources */,
 				7A38700D2335112900B7BADE /* String+.swift in Sources */,
 				7A38700B2335104500B7BADE /* NSAttributedString+.swift in Sources */,
@@ -294,7 +333,6 @@
 				7A3870052334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */,
 				7A386FF92334B8EB00B7BADE /* Reusable.swift in Sources */,
 				7A386FE023339F3400B7BADE /* QExtensionsTests.swift in Sources */,
-				7A3870022334C23800B7BADE /* Logger.swift in Sources */,
 				7A700A0E2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */,
 				7A700A112334ED5D0075B5EA /* AnimatedButton.swift in Sources */,
 			);

@@ -87,5 +87,10 @@ extension String {
         
         return nil
     }
+    
+    /// Returns bearer token
+    public func bearerToken() -> String {
+        return "Bearer \(self)"
+    }
 }
 
