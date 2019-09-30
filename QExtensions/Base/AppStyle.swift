@@ -11,21 +11,21 @@ import Foundation
 extension QBase {
     
     /// QBase struct for common style of app
-    struct AppStyle {
+    public struct AppStyle {
         
         /// Type of text styles
-        enum TextStyle {
+        public enum TextStyle {
             case navigationBar
             case tabBar
         }
         
-        struct TextAttributes {
+        public struct TextAttributes {
             let font: UIFont
             let color: UIColor
             let backgroundColor: UIColor?
             let selectedColor: UIColor?
             
-            init(font: UIFont? = UIFont.systemFont(ofSize: 13), color: UIColor, selectedColor: UIColor? = .white, backgroundColor: UIColor? = nil) {
+            public init(font: UIFont? = UIFont.systemFont(ofSize: 13), color: UIColor, selectedColor: UIColor? = .white, backgroundColor: UIColor? = nil) {
                 self.font = font ?? UIFont.systemFont(ofSize: 13)
                 self.color = color
                 self.backgroundColor = backgroundColor
@@ -37,7 +37,7 @@ extension QBase {
         let preferredStatusBarStyle: UIStatusBarStyle
         let attributesForStyle: (_ style: TextStyle) -> TextAttributes
         
-        init(backgroundColor: UIColor, preferredStatusBarStyle: UIStatusBarStyle = .default, attributesForStyle: @escaping (_ style: TextStyle) -> TextAttributes) {
+        public init(backgroundColor: UIColor, preferredStatusBarStyle: UIStatusBarStyle = .default, attributesForStyle: @escaping (_ style: TextStyle) -> TextAttributes) {
             self.backgroundColor = backgroundColor
             self.preferredStatusBarStyle = preferredStatusBarStyle
             self.attributesForStyle = attributesForStyle
@@ -45,7 +45,7 @@ extension QBase {
         
         // MARK: NavigationBar
         
-        func apply(textStyle: AppStyle.TextStyle = .navigationBar, to navigationBar: UINavigationBar) {
+        public func apply(textStyle: AppStyle.TextStyle = .navigationBar, to navigationBar: UINavigationBar) {
             let attributes = attributesForStyle(textStyle)
             navigationBar.titleTextAttributes = [
                 NSAttributedString.Key.font: attributes.font,
@@ -65,7 +65,7 @@ extension QBase {
         
         // MARK: TabBar
         
-        func apply(textStyle: AppStyle.TextStyle, to tabBar: UITabBar) {
+        public func apply(textStyle: AppStyle.TextStyle, to tabBar: UITabBar) {
             
             let attributes = attributesForStyle(textStyle)
             tabBar.barTintColor = attributes.backgroundColor

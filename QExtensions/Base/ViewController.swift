@@ -11,7 +11,7 @@ import os.log
 
 extension QBase {
     
-    class ViewController<ViewModelType>: UIViewController, ViewControllerStyleable {
+    open class ViewController<ViewModelType>: UIViewController, ViewControllerStyleable {
         
         // MARK: View Model
         
@@ -23,18 +23,18 @@ extension QBase {
             super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         }
         
-        required init?(coder aDecoder: NSCoder) {
+        required public init?(coder aDecoder: NSCoder) {
             fatalError("init(coder:) has not been implemented")
         }
         
-        init(viewModel: ViewModelType) {
+        public init(viewModel: ViewModelType) {
             super.init(nibName: nil, bundle: nil)
             
             if QBase.isLoggingEnabled {
                 if #available(iOS 10.0, *) {
-                    os_log(" %@", log: Logger.lifecycleLog(), type: .info, self)
+                    os_log("Initialized %@", log: Logger.lifecycleLog(), type: .info, self)
                 } else {
-                    NSLog("📱 👶 \(self)")
+                    NSLog("Initialized \(self)")
                 }
             }
             
@@ -45,30 +45,26 @@ extension QBase {
         
         deinit {
             if #available(iOS 10.0, *) {
-                os_log("📱 ⚰️ %@", log: Logger.lifecycleLog(), type: .info, self)
+                os_log("Deinitialized %@", log: Logger.lifecycleLog(), type: .info, self)
             } else {
-                NSLog("📱 ⚰️ \(self)")
+                NSLog("Deinitialized \(self)")
             }
         }
         
         // MARK: Lifecycle
         
-        override func viewDidLoad() {
+        override open func viewDidLoad() {
             super.viewDidLoad()
             self.setStyle()
         }
         
-        // MARK: Bind
-        
-        func bind() {}
-        
         // MARK: Style
         
-        func setStyle() {}
+        open func setStyle() {}
         
         // MARK: Actions
         
-        @objc func dismissKeyboard() {
+        @objc public func dismissKeyboard() {
             view.endEditing(true)
         }
     }

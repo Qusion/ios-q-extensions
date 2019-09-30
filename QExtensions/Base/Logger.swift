@@ -6,6 +6,7 @@
 //  Copyright © 2019 Qusion. All rights reserved.
 //
 
+import Foundation
 import os.log
 
 extension QBase {

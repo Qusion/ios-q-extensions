@@ -8,17 +8,14 @@
 
 import UIKit
 
-extension QBase {
-    
-}
-protocol ViewControllerStyleable {
+public protocol ViewControllerStyleable {
     
     func setStyle()
     func setDefaultAttributesFor(style: QBase.AppStyle, for viewController: UIViewController)
     func setDefaultAttributesFor(style: QBase.AppStyle, for viewController: UIViewController, title: String?)
 }
 
-extension ViewControllerStyleable {
+public extension ViewControllerStyleable {
     
     func setDefaultAttributesFor(style: QBase.AppStyle, for viewController: UIViewController) {
         if let navigationBar = viewController.navigationController?.navigationBar {

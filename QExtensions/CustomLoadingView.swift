@@ -9,7 +9,7 @@
 import UIKit
 import QuartzCore
 
-class CustomLoadingView: UIView {
+open class CustomLoadingView: UIView {
     
     var image: UIImage? {
         didSet {
@@ -70,7 +70,7 @@ class CustomLoadingView: UIView {
     
     // MARK: - public func
     
-    func startAnimating () {
+    public func startAnimating () {
         
         if isAnimating {
             return
@@ -79,7 +79,7 @@ class CustomLoadingView: UIView {
         resume(layer: self.layer)
     }
     
-    func stopAnimating () {
+    public func stopAnimating () {
         pause(layer: self.layer)
     }
 }
