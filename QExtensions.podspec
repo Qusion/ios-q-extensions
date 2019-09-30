@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "QExtensions"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Swift common classes and extensions use at Qusion."
   spec.homepage     = "https://github.com/QusionDev/ios-QExtensions/blob/master/README.md"
   spec.license      = {
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.platform     = :ios, "11.0"
   spec.swift_versions = ['5.0']
-  spec.source       = { :git => "https://github.com/QusionDev/ios-QExtensions.git", :tag => "#{spec.version}" }
-  spec.source_files  = "QExtensions", "QExtensions/**/*.{h,m}"
+  spec.source       = { :git => 'https://github.com/QusionDev/ios-QExtensions.git', :tag => spec.version }
+  spec.source_files  = "QExtensions", "QExtensions/**/*.swift"
 
 end
