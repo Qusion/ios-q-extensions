@@ -8,13 +8,24 @@
 
 import UIKit
 
-public extension UIView {
+extension UIView {
     
     /// Sets `contentHuggingPriority` and `contentCompressionResistancePriority` to `UILayoutPriority.required`.
-    func forceIntrinsic() {
+    public func forceIntrinsic() {
         setContentHuggingPriority(.required, for: .horizontal)
         setContentHuggingPriority(.required, for: .vertical)
         setContentCompressionResistancePriority(.required, for: .horizontal)
         setContentCompressionResistancePriority(.required, for: .vertical)
+    }
+    
+    public func dropShadow(color: UIColor, opacity: Float = 0.9, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true) {
+        layer.masksToBounds = false
+        layer.shadowColor = color.cgColor
+        layer.shadowOpacity = opacity
+        layer.shadowOffset = offSet
+        layer.shadowRadius = radius
+        layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
+        layer.shouldRasterize = true
+        layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
 }

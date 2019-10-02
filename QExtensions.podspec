@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "QExtensions"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "Swift common classes and extensions use at Qusion."
   spec.homepage     = "https://github.com/QusionDev/ios-QExtensions/blob/master/README.md"
   spec.license      = {
