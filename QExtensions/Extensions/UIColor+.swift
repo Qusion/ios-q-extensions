@@ -11,7 +11,7 @@ import UIKit
 extension UIColor {
     
     /// Initializers for creating hex color
-    convenience init(hexString: String) {
+    public convenience init(hexString: String) {
         
         /// Trim leading '#' if needed
         var cleanedHexString = hexString

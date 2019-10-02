@@ -6,9 +6,9 @@
 //  Copyright © 2019 Qusion. All rights reserved.
 //
 
-class AnimatedButton: UIButton {
+open class AnimatedButton: UIButton {
     
-    override var isHighlighted: Bool {
+    override open var isHighlighted: Bool {
         didSet {
             let transform: CGAffineTransform = isHighlighted ? .init(scaleX: 0.93, y: 0.93) : .identity
             animate(transform)

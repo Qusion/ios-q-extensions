@@ -1,16 +1,14 @@
 //
-//  UIViewController.swift
+//  UIViewController+.swift
 //  QExtensions
 //
-//  Created by Tomas Holicky on 25/09/2019.
+//  Created by Tomas Holicky on 30/09/2019.
 //  Copyright © 2019 Qusion. All rights reserved.
 //
 
-import Foundation
-
 extension UIViewController {
     
-    func popToViewControllerType<T>(type: T.Type, completion: @escaping (Bool) -> Void) {
+    public func popToViewControllerType<T>(type: T.Type, completion: @escaping (Bool) -> Void) {
         guard let navigationController = self.navigationController else {
             completion(false)
             return
