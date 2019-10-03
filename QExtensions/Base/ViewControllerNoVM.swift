@@ -12,7 +12,7 @@ extension QBase {
     public struct NoViewModel {}
     
     /// QBase VC with no VM
-    class ViewControllerNoVM: QBase.ViewController<NoViewModel> {
+    open class ViewControllerNoVM: QBase.ViewController<NoViewModel> {
         
         public init() {
             super.init(viewModel: QBase.NoViewModel())

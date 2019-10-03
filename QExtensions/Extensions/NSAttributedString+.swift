@@ -8,10 +8,10 @@
 
 import Foundation
 
-public extension NSAttributedString {
+extension NSAttributedString {
     
     /// Append another attributed string
-    func byAppending(_ other: NSAttributedString) -> NSAttributedString {
+    public func byAppending(_ other: NSAttributedString) -> NSAttributedString {
         let result = NSMutableAttributedString()
         
         result.append(self)
@@ -21,7 +21,7 @@ public extension NSAttributedString {
     }
     
     /// Concat two attributed strings
-    static func +(_ lhs: NSAttributedString, _ rhs: NSAttributedString) -> NSAttributedString {
+    public static func +(_ lhs: NSAttributedString, _ rhs: NSAttributedString) -> NSAttributedString {
         return lhs.byAppending(rhs)
     }
 }

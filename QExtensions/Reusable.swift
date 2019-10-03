@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol Reusable: class {}
+public protocol Reusable: class {}
 
 extension Reusable {
     /// Reuse identifier
@@ -27,14 +27,14 @@ public protocol NibLoadable: class {
 
 extension NibLoadable where Self: UIViewController {
     
-    static var nib: UINib {
+    public static var nib: UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
 }
 
 extension NibLoadable where Self: UIView {
     
-    static var nib: UINib {
+    public static var nib: UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
 }

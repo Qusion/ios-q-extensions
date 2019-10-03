@@ -10,7 +10,7 @@ import Foundation
 
 extension DateFormatter {
     
-    static var baseFormat: DateFormatter {
+    public static var baseFormat: DateFormatter {
         get {
             let dateformatter = DateFormatter()
             dateformatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -20,7 +20,7 @@ extension DateFormatter {
         }
     }
     
-    static var startDateFormat: DateFormatter {
+    public static var startDateFormat: DateFormatter {
         get {
             let dateformatter = DateFormatter()
             dateformatter.dateFormat = "yyyy-MM-dd 00:00:00"
@@ -30,7 +30,7 @@ extension DateFormatter {
         }
     }
     
-    static var endDateFormat: DateFormatter {
+    public static var endDateFormat: DateFormatter {
         get {
             let dateformatter = DateFormatter()
             dateformatter.dateFormat = "yyyy-MM-dd 23:59:59"
@@ -40,7 +40,7 @@ extension DateFormatter {
         }
     }
     
-    static var withoutTimeFormat: DateFormatter {
+    public static var withoutTimeFormat: DateFormatter {
         get {
             let dateformatter = DateFormatter()
             dateformatter.dateFormat = "yyyy-MM-dd"
@@ -50,7 +50,7 @@ extension DateFormatter {
         }
     }
     
-    static var czechWithoutTimeFormat: DateFormatter {
+    public static var czechWithoutTimeFormat: DateFormatter {
         get {
             let dateformatter = DateFormatter()
             dateformatter.dateFormat = "d.M.yyyy"

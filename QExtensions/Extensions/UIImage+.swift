@@ -11,7 +11,7 @@ import UIKit
 extension UIImage {
     
     /// Fix image orientation to up
-    func upOrientationImage() -> UIImage? {
+    public func upOrientationImage() -> UIImage? {
         switch imageOrientation {
         case .up:
             return self
@@ -24,7 +24,7 @@ extension UIImage {
         }
     }
     
-    func qrCode(string: String) -> UIImage? {
+    public func qrCode(string: String) -> UIImage? {
         let data = string.data(using: .isoLatin1, allowLossyConversion: false)
         
         if let filter = CIFilter(name: "CIQRCodeGenerator") {

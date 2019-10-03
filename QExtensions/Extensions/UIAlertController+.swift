@@ -14,26 +14,26 @@ extension UIAlertController {
         return UIAlertController(title: title, message: message, preferredStyle: .alert)
     }
     
-    @discardableResult func action(_ action: String, style: UIAlertAction.Style = .default, onSelected: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
+    @discardableResult public func action(_ action: String, style: UIAlertAction.Style = .default, onSelected: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
         self.addAction(UIAlertAction(title: action, style: style, handler: onSelected))
         return self
     }
     
-    @discardableResult func actionDefault(_ action: String, onDefault: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
+    @discardableResult public func actionDefault(_ action: String, onDefault: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
         self.addAction(UIAlertAction(title: action, style: .default, handler: { alert in
             onDefault?(alert)
         }))
         return self
     }
     
-    @discardableResult func actionCancel(_ action: String, onCancel: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
+    @discardableResult public func actionCancel(_ action: String, onCancel: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
         self.addAction(UIAlertAction(title: action, style: .cancel, handler: { alert in
             onCancel?(alert)
         }))
         return self
     }
     
-    @discardableResult func actionDestructive(_ action: String, onDestruct: @escaping ((UIAlertAction) -> Void)) -> UIAlertController {
+    @discardableResult public func actionDestructive(_ action: String, onDestruct: @escaping ((UIAlertAction) -> Void)) -> UIAlertController {
         self.addAction(UIAlertAction(title: action, style: .destructive, handler: { action in
             onDestruct(action)
         }))
