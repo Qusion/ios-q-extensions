@@ -61,12 +61,6 @@ extension QBase {
         // MARK: Style
         
         open func setStyle() {}
-        
-        // MARK: Actions
-        
-        @objc public func dismissKeyboard() {
-            view.endEditing(true)
-        }
     }
 }
 
