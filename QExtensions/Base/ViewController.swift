@@ -15,7 +15,7 @@ extension QBase {
         
         // MARK: View Model
         
-        var viewModel: ViewModelType!
+        public var viewModel: ViewModelType!
         
         // MARK: Initializers
         
