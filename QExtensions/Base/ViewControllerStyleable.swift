@@ -12,7 +12,7 @@ public protocol ViewControllerStyleable {
     
     func setStyle()
     func setDefaultAttributesFor(style: QBase.AppStyle, for viewController: UIViewController)
-    func setDefaultAttributesFor(style: QBase.AppStyle, for viewController: UIViewController, title: String?)
+    func setDefaultAttributesFor(style: QBase.AppStyle, for viewController: UIViewController, title: String?, position: UIView.ContentMode)
 }
 
 public extension ViewControllerStyleable {
@@ -25,7 +25,7 @@ public extension ViewControllerStyleable {
         viewController.view.backgroundColor = style.backgroundColor
     }
     
-    func setDefaultAttributesFor(style: QBase.AppStyle, for viewController: UIViewController, title: String?) {
+    func setDefaultAttributesFor(style: QBase.AppStyle, for viewController: UIViewController, title: String?, position: UIView.ContentMode = .center) {
         self.setDefaultAttributesFor(style: style, for: viewController)
         
         if let title = title {
@@ -35,7 +35,17 @@ public extension ViewControllerStyleable {
             titleLabel.textColor = attributes.color
             titleLabel.backgroundColor = style.backgroundColor
             titleLabel.text = title
-            viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: titleLabel)
+            
+            switch position {
+            case .left:
+                viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: titleLabel)
+            case .right:
+                viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: titleLabel)
+            case .center:
+                viewController.navigationItem.titleView = titleLabel
+            default:
+                viewController.navigationItem.titleView = titleLabel
+            }
         }
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 extension UIAlertController {
     
-    class func alert(_ title: String? = nil, message: String? = nil) -> UIAlertController {
+    public class func alert(_ title: String? = nil, message: String? = nil) -> UIAlertController {
         return UIAlertController(title: title, message: message, preferredStyle: .alert)
     }
     

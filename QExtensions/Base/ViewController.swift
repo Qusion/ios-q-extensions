@@ -51,13 +51,6 @@ extension QBase {
             }
         }
         
-        // MARK: Lifecycle
-        
-        override open func viewDidLoad() {
-            super.viewDidLoad()
-            self.setStyle()
-        }
-        
         // MARK: Style
         
         open func setStyle() {}

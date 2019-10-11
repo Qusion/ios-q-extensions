@@ -35,6 +35,7 @@
 		7A5D0B9E233BB11A003CC100 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0B9D233BB11A003CC100 /* FlowCoordinator.swift */; };
 		7A5D0BA0233BB169003CC100 /* QBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0B9F233BB169003CC100 /* QBase.swift */; };
 		7A5D0BA2233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0BA1233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift */; };
+		7A6C30B42350EDA10007EF14 /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6C30B32350EDA10007EF14 /* UIScreen+.swift */; };
 		7A700A0D2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */; };
 		7A700A0E2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */; };
 		7A700A102334ED5D0075B5EA /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0F2334ED5D0075B5EA /* AnimatedButton.swift */; };
@@ -81,6 +82,7 @@
 		7A5D0B9D233BB11A003CC100 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		7A5D0B9F233BB169003CC100 /* QBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QBase.swift; sourceTree = "<group>"; };
 		7A5D0BA1233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorNoDeepLink.swift; sourceTree = "<group>"; };
+		7A6C30B32350EDA10007EF14 /* UIScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+.swift"; sourceTree = "<group>"; };
 		7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
 		7A700A0F2334ED5D0075B5EA /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +172,7 @@
 				7A38700E233689AE00B7BADE /* UIDevice+.swift */,
 				7A38701223368AE900B7BADE /* UIView+.swift */,
 				7A2BDF312342725200895615 /* UIViewController+.swift */,
+				7A6C30B32350EDA10007EF14 /* UIScreen+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A3870042334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */,
+				7A6C30B42350EDA10007EF14 /* UIScreen+.swift in Sources */,
 				7A5D0BA2233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift in Sources */,
 				7A38700F233689AE00B7BADE /* UIDevice+.swift in Sources */,
 				7A2B8843233CD47E00996E09 /* ViewController.swift in Sources */,
