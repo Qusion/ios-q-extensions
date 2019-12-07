@@ -8,19 +8,19 @@
 
 extension UIViewController {
     
-    public func popToViewControllerType<T>(type: T.Type, completion: @escaping (Bool) -> Void) {
+    public func popToViewControllerType<T>(type: T.Type, completion: ((Bool) -> Void)? = nil) {
         guard let navigationController = self.navigationController else {
-            completion(false)
+            completion?(false)
             return
         }
         
         for controller in navigationController.viewControllers as Array where controller is T {
             _ = self.navigationController?.popToViewController(controller as UIViewController, animated: true)
-            completion(true)
+            completion?(true)
             return
         }
         
-        completion(false)
+        completion?(false)
     }
     
     public func addChildViewControllerWithView(_ childViewController: UIViewController, toView view: UIView? = nil) {

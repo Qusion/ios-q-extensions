@@ -51,6 +51,30 @@ extension QBase {
             }
         }
         
+        // MARK: Lifecycle
+        
+        override open func viewDidLoad() {
+            super.viewDidLoad()
+            
+            if let navbarImage = self.backButtonImage() {
+                navigationController?.navigationBar.backIndicatorImage = navbarImage
+                navigationController?.navigationBar.backIndicatorTransitionMaskImage = navbarImage
+                navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+            }
+            
+            navigationItem.hidesBackButton = !self.canNavigateBack()
+        }
+        
+        // MARK: - Navigation methods
+        
+        open func backButtonImage() -> UIImage? {
+            return nil
+        }
+        
+        open func canNavigateBack() -> Bool {
+            return true
+        }
+        
         // MARK: Style
         
         open func setStyle() {}

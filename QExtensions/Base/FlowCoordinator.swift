@@ -40,28 +40,20 @@ extension QBase {
         
         /// Just start and return rootViewController. Object calling this method will connect returned view controller to the flow.
         @discardableResult open func start() -> UIViewController {
-            checkRootViewController()
-            
             return UIViewController()
         }
         
         /// Start in window. Window's root VC is supposed to be set.
-        open func start(in window: UIWindow) {
-            checkRootViewController()
-        }
+        open func start(in window: UIWindow) {}
         
         /// Start within existing navigation controller.
         open func start(with navigationController: UINavigationController) {
             self.navigationController = navigationController
             navigationController.delegate = self
-            
-            checkRootViewController()
         }
         
         /// Start by presenting from given VC. This method must be overriden by subclass.
-        open func start(from viewController: UIViewController) {
-            checkRootViewController()
-        }
+        open func start(from viewController: UIViewController) {}
         
         /// Clean up. Must be called when FC finished the flow to avoid memory leaks and unexpcted behavior.
         open func stop(animated: Bool = false) {
@@ -158,13 +150,6 @@ extension QBase {
                 } else {
                     NSLog("Deinitialized \(self)")
                 }
-            }
-        }
-        
-        /// Wait for a second and check whether rootViewController was set
-        private func checkRootViewController() {
-            DispatchQueue(label: "rootViewController").asyncAfter(deadline: .now() + 1) { [weak self] in
-                if self?.rootViewController == nil { assertionFailure("rootViewController is nil") }
             }
         }
     }

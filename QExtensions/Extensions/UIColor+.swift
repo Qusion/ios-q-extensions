@@ -49,5 +49,27 @@ extension UIColor {
         
         return UIColor(red: l1*r1 + l2*r2, green: l1*g1 + l2*g2, blue: l1*b1 + l2*b2, alpha: l1*a1 + l2*a2)
     }
+    
+    /// UIColor convert to hex color
+    public func toHex(alpha: Bool = false) -> String? {
+        guard let components = cgColor.components, components.count >= 3 else {
+            return nil
+        }
+        
+        let r: Float = Float(components[0])
+        let g: Float = Float(components[1])
+        let b: Float = Float(components[2])
+        var a: Float = Float(1.0)
+        
+        if components.count >= 4 {
+            a = Float(components[3])
+        }
+        
+        if alpha {
+            return String(format: "#%02lX%02lX%02lX%02lX", lroundf(r * 255), lroundf(g * 255), lroundf(b * 255), lroundf(a * 255))
+        } else {
+            return String(format: "#%02lX%02lX%02lX", lroundf(r * 255), lroundf(g * 255), lroundf(b * 255))
+        }
+    }
 }
 
