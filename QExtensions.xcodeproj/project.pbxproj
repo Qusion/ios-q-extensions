@@ -32,6 +32,8 @@
 		7A38700F233689AE00B7BADE /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700E233689AE00B7BADE /* UIDevice+.swift */; };
 		7A38701123368A1900B7BADE /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38701023368A1900B7BADE /* UIImage+.swift */; };
 		7A38701323368AE900B7BADE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38701223368AE900B7BADE /* UIView+.swift */; };
+		7A413E1723AFD76F00194944 /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A413E1623AFD76F00194944 /* UINavigationController+.swift */; };
+		7A413E1923AFD91D00194944 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A413E1823AFD91D00194944 /* UIStackView+.swift */; };
 		7A5D0B9E233BB11A003CC100 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0B9D233BB11A003CC100 /* FlowCoordinator.swift */; };
 		7A5D0BA0233BB169003CC100 /* QBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0B9F233BB169003CC100 /* QBase.swift */; };
 		7A5D0BA2233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0BA1233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift */; };
@@ -79,6 +81,8 @@
 		7A38700E233689AE00B7BADE /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
 		7A38701023368A1900B7BADE /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		7A38701223368AE900B7BADE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		7A413E1623AFD76F00194944 /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
+		7A413E1823AFD91D00194944 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		7A5D0B9D233BB11A003CC100 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		7A5D0B9F233BB169003CC100 /* QBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QBase.swift; sourceTree = "<group>"; };
 		7A5D0BA1233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorNoDeepLink.swift; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				7A38701223368AE900B7BADE /* UIView+.swift */,
 				7A2BDF312342725200895615 /* UIViewController+.swift */,
 				7A6C30B32350EDA10007EF14 /* UIScreen+.swift */,
+				7A413E1623AFD76F00194944 /* UINavigationController+.swift */,
+				7A413E1823AFD91D00194944 /* UIStackView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -303,10 +309,12 @@
 			files = (
 				7A3870042334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */,
 				7A6C30B42350EDA10007EF14 /* UIScreen+.swift in Sources */,
+				7A413E1723AFD76F00194944 /* UINavigationController+.swift in Sources */,
 				7A5D0BA2233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift in Sources */,
 				7A38700F233689AE00B7BADE /* UIDevice+.swift in Sources */,
 				7A2B8843233CD47E00996E09 /* ViewController.swift in Sources */,
 				7A386FF82334B8EB00B7BADE /* Reusable.swift in Sources */,
+				7A413E1923AFD91D00194944 /* UIStackView+.swift in Sources */,
 				7A38700923350FA600B7BADE /* GradientView.swift in Sources */,
 				7A386FFE2334C0A200B7BADE /* UIButton+.swift in Sources */,
 				7A38701123368A1900B7BADE /* UIImage+.swift in Sources */,

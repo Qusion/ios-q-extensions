@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 extension UIDevice {
     
@@ -23,5 +24,37 @@ extension UIDevice {
     /// Get device name
     public var deviceName: String {
         return UIDevice.current.name
+    }
+    
+    /// Get device biometry type
+    public class func deviceBiometryType() -> BiometryType {
+        let laContext = LAContext()
+        var error: NSError?
+        
+        if laContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            
+            if laContext.biometryType == .faceID {
+                return .faceID
+            } else if laContext.biometryType == .touchID {
+                return .touchID
+            }
+        }
+        
+        return .none
+    }
+    
+    public enum BiometryType {
+        case none
+        case touchID
+        case faceID
+    }
+    
+    /// Returns true if biometry is active
+    public class func biometryActive() -> Bool {
+        var error: NSError?
+        
+        let result = LAContext().canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error )
+        
+        return result && error == nil
     }
 }

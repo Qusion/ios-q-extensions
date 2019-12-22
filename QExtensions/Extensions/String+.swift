@@ -16,6 +16,17 @@ extension String {
         return self.first.flatMap { String($0) }
     }
     
+    /// Returns html NSMutableAttributedString
+    public var htmlToAttributedString: NSMutableAttributedString? {
+        guard let data = data(using: .utf8) else { return NSMutableAttributedString() }
+        
+        do {
+            return try NSMutableAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
+        } catch {
+            return NSMutableAttributedString()
+        }
+    }
+    
     /// Returns true if string contains just numeric characters
     public var isNumeric: Bool {
         return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
@@ -67,8 +78,8 @@ extension String {
         return folding(options: .diacriticInsensitive, locale: locale)
     }
     
-    /// Creates qr code image with given size
-    public func createQRCode(size: CGSize) -> UIImage? {
+    /// Creates qr code image with given size, foreground and background colours
+    public func createQRCode(size: CGSize, foreground: UIColor = .black, background: UIColor = .white) -> UIImage? {
         let data = self.data(using: .isoLatin1, allowLossyConversion: false)
         
         if let filter = CIFilter(name: "CIQRCodeGenerator") {
@@ -79,7 +90,14 @@ extension String {
                 let scaleX = size.width / outputImage.extent.size.width
                 let scaleY = size.height / outputImage.extent.size.height
                 
-                let transformedImage = outputImage.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
+                let colorParameters = [
+                    "inputColor0": CIColor(color: foreground),
+                    "inputColor1": CIColor(color: background)
+                ]
+                
+                let colored = outputImage.applyingFilter("CIFalseColor", parameters: colorParameters)
+                
+                let transformedImage = colored.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
                 
                 return UIImage(ciImage: transformedImage)
             }
@@ -91,6 +109,24 @@ extension String {
     /// Returns bearer token
     public func bearerToken() -> String {
         return "Bearer \(self)"
+    }
+    
+    public func openUrl() {
+        guard let url = URL(string: self) else {
+            return
+        }
+        
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    public func canOpenUrl() -> Bool {
+        guard let url = URL(string: self) else {
+            return false
+        }
+        
+        return UIApplication.shared.canOpenURL(url)
     }
 }
 
