@@ -111,6 +111,7 @@ extension String {
         return "Bearer \(self)"
     }
     
+    /// Tries convert string to URL and open it
     public func openUrl() {
         guard let url = URL(string: self) else {
             return
@@ -121,12 +122,29 @@ extension String {
         }
     }
     
+    /// Returns true if string is possible to convert to URL and open it
     public func canOpenUrl() -> Bool {
         guard let url = URL(string: self) else {
             return false
         }
         
         return UIApplication.shared.canOpenURL(url)
+    }
+    
+    /// Returns unicode emoji flag
+    public func emojiFlag() -> String {
+        let base = UnicodeScalar("🇦").value - UnicodeScalar("A").value
+        return self.uppercased().flatten(base: base).joined()
+    }
+    
+    private func flatten(base: UInt32 = 0) -> [String] {
+        return self.unicodeScalars.compactMap { scalarView in
+            if let scalar = UnicodeScalar(base + scalarView.value) {
+                return String(scalar)
+            } else {
+                return nil
+            }
+        }
     }
 }
 

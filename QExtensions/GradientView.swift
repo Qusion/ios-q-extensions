@@ -11,7 +11,7 @@ import UIKit
 ///This view creates a gradient view with the defined colors
 open class GradientView: UIView {
     
-    private weak var gradientLayer: CAGradientLayer!
+    public weak var gradientLayer: CAGradientLayer!
     
     /// Initializers for creating gradient view
     public init(colors: [UIColor], axis: NSLayoutConstraint.Axis) {
@@ -20,11 +20,11 @@ open class GradientView: UIView {
         gradientLayer.frame = bounds
         gradientLayer.colors = colors.map { $0.cgColor }
         if axis == .vertical {
-            gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
-            gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
+            gradientLayer.startPoint = CGPoint(x: 0.6, y: 0)
+            gradientLayer.endPoint = CGPoint(x: 0.6, y: 1)
         } else {
-            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
-            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.6)
+            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.6)
         }
         
         layer.insertSublayer(gradientLayer, at: 0)

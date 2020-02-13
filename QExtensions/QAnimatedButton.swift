@@ -1,12 +1,12 @@
 //
-//  AnimatedButton.swift
+//  QAnimatedButton.swift
 //  QExtensions
 //
-//  Created by Tomas Holicky on 20/09/2019.
-//  Copyright © 2019 Qusion. All rights reserved.
+//  Created by Tomas Holicky on 13/02/2020.
+//  Copyright © 2020 Qusion. All rights reserved.
 //
 
-open class AnimatedButton: UIButton {
+open class QAnimatedButton: UIButton {
     
     override open var isHighlighted: Bool {
         didSet {
@@ -16,7 +16,7 @@ open class AnimatedButton: UIButton {
     }
 }
 
-private extension AnimatedButton {
+private extension QAnimatedButton {
     
     private func animate(_ transform: CGAffineTransform) {
         UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 3, options: [.curveEaseInOut], animations: {
