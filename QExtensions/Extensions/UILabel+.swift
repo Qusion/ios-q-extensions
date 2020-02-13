@@ -10,11 +10,11 @@ import UIKit
 
 extension UILabel {
     
-    public func setParagraph(lineSpacing: CGFloat, alignment: NSTextAlignment) {
+    public func setParagraph(text: String, lineSpacing: CGFloat = 6, alignment: NSTextAlignment = .center) {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = lineSpacing
         paragraphStyle.alignment = alignment
-        let attrString = NSMutableAttributedString(string: self.text ?? "")
+        let attrString = NSMutableAttributedString(string: text)
         attrString.addAttribute(.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
         self.attributedText = attrString
     }
