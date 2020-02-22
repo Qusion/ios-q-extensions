@@ -63,16 +63,6 @@ extension String {
         return matchesRegex(regex)
     }
     
-    /// Check if `self` is valid phone number with default regex
-    public func isValidPhoneNumber(regex: String = "^((\\+|00)(420|421))? ?\\d{3} ?\\d{3} ?\\d{3}$") -> Bool {
-        return matchesRegex(regex)
-    }
-    
-    /// Check if `self` is valid password with default regex
-    public func isValidPassword(regex: String = "(?=^.{8,}$)(?=.*\\d)(?=.*[a-zA-Z]).*$") -> Bool {
-        return matchesRegex(regex)
-    }
-    
     /// Removes diacritics from string using given locale
     public func removingDiacritics(_ locale: Locale = Locale.current) -> String {
         return folding(options: .diacriticInsensitive, locale: locale)

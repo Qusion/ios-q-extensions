@@ -26,6 +26,12 @@ extension UIDevice {
         return UIDevice.current.name
     }
     
+    /// Has device notch
+    public var hasNotch: Bool {
+        let bottom = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
+        return bottom > 0
+    }
+    
     /// Get device biometry type
     public class func deviceBiometryType() -> BiometryType {
         let laContext = LAContext()
