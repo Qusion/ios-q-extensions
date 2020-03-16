@@ -33,7 +33,7 @@ public extension ViewControllerStyleable {
             let attributes = style.attributesForStyle(QBase.AppStyle.TextStyle.navigationBar)
             titleLabel.font = attributes.font
             titleLabel.textColor = attributes.color
-            titleLabel.backgroundColor = style.backgroundColor
+            titleLabel.backgroundColor = .clear
             titleLabel.text = title
             
             switch position {
