@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A22EE21242CE244004CBE6F /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22EE20242CE244004CBE6F /* AnimatedButton.swift */; };
 		7A2B8843233CD47E00996E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B8842233CD47E00996E09 /* ViewController.swift */; };
 		7A2B8845233CD52000996E09 /* ViewControllerNoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B8844233CD52000996E09 /* ViewControllerNoVM.swift */; };
 		7A2B8847233CD6AF00996E09 /* ViewControllerStyleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B8846233CD6AF00996E09 /* ViewControllerStyleable.swift */; };
@@ -24,7 +25,6 @@
 		7A386FFE2334C0A200B7BADE /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A386FFD2334C0A200B7BADE /* UIButton+.swift */; };
 		7A3870012334C23800B7BADE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870002334C23800B7BADE /* Logger.swift */; };
 		7A3870042334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */; };
-		7A3870052334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */; };
 		7A38700723350F1C00B7BADE /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700623350F1C00B7BADE /* Bundle+.swift */; };
 		7A38700923350FA600B7BADE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700823350FA600B7BADE /* GradientView.swift */; };
 		7A38700B2335104500B7BADE /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38700A2335104500B7BADE /* NSAttributedString+.swift */; };
@@ -38,11 +38,9 @@
 		7A5D0BA0233BB169003CC100 /* QBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0B9F233BB169003CC100 /* QBase.swift */; };
 		7A5D0BA2233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D0BA1233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift */; };
 		7A6C30B42350EDA10007EF14 /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6C30B32350EDA10007EF14 /* UIScreen+.swift */; };
-		7A6FDA0E23F5DB7200875CE9 /* QAnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6FDA0D23F5DB7200875CE9 /* QAnimatedButton.swift */; };
 		7A6FDA1023F5E1F100875CE9 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6FDA0F23F5E1F000875CE9 /* UILabel+.swift */; };
 		7A6FDA1223F5E4F900875CE9 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6FDA1123F5E4F900875CE9 /* UITableViewCell+.swift */; };
 		7A700A0D2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */; };
-		7A700A0E2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A22EE20242CE244004CBE6F /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 		7A2B8842233CD47E00996E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7A2B8844233CD52000996E09 /* ViewControllerNoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNoVM.swift; sourceTree = "<group>"; };
 		7A2B8846233CD6AF00996E09 /* ViewControllerStyleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStyleable.swift; sourceTree = "<group>"; };
@@ -88,7 +87,6 @@
 		7A5D0B9F233BB169003CC100 /* QBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QBase.swift; sourceTree = "<group>"; };
 		7A5D0BA1233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorNoDeepLink.swift; sourceTree = "<group>"; };
 		7A6C30B32350EDA10007EF14 /* UIScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+.swift"; sourceTree = "<group>"; };
-		7A6FDA0D23F5DB7200875CE9 /* QAnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAnimatedButton.swift; sourceTree = "<group>"; };
 		7A6FDA0F23F5E1F000875CE9 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		7A6FDA1123F5E4F900875CE9 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
@@ -113,6 +111,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A22EE1F242CE1D0004CBE6F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7A2B8846233CD6AF00996E09 /* ViewControllerStyleable.swift */,
+				7A38700823350FA600B7BADE /* GradientView.swift */,
+				7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */,
+				7A2B8848233CD72E00996E09 /* AppStyle.swift */,
+				7A22EE20242CE244004CBE6F /* AnimatedButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		7A386FC723339F3400B7BADE = {
 			isa = PBXGroup;
 			children = (
@@ -138,10 +148,6 @@
 				7A38701423368B3C00B7BADE /* Extensions */,
 				7A386FED2334B2E800B7BADE /* Supporting files */,
 				7A386FF72334B8EB00B7BADE /* Reusable.swift */,
-				7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */,
-				7A700A0C2334ED1B0075B5EA /* CustomLoadingView.swift */,
-				7A38700823350FA600B7BADE /* GradientView.swift */,
-				7A6FDA0D23F5DB7200875CE9 /* QAnimatedButton.swift */,
 			);
 			path = QExtensions;
 			sourceTree = "<group>";
@@ -191,14 +197,14 @@
 		7A5D0B9C233BB10C003CC100 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				7A22EE1F242CE1D0004CBE6F /* UI */,
 				7A5D0B9D233BB11A003CC100 /* FlowCoordinator.swift */,
 				7A5D0B9F233BB169003CC100 /* QBase.swift */,
 				7A5D0BA1233BB32B003CC100 /* FlowCoordinatorNoDeepLink.swift */,
 				7A3870002334C23800B7BADE /* Logger.swift */,
 				7A2B8842233CD47E00996E09 /* ViewController.swift */,
 				7A2B8844233CD52000996E09 /* ViewControllerNoVM.swift */,
-				7A2B8846233CD6AF00996E09 /* ViewControllerStyleable.swift */,
-				7A2B8848233CD72E00996E09 /* AppStyle.swift */,
+				7A3870032334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A3870042334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */,
+				7A22EE21242CE244004CBE6F /* AnimatedButton.swift in Sources */,
 				7A6FDA1023F5E1F100875CE9 /* UILabel+.swift in Sources */,
 				7A6C30B42350EDA10007EF14 /* UIScreen+.swift in Sources */,
 				7A6FDA1223F5E4F900875CE9 /* UITableViewCell+.swift in Sources */,
@@ -327,7 +334,6 @@
 				7A38701123368A1900B7BADE /* UIImage+.swift in Sources */,
 				7A5D0B9E233BB11A003CC100 /* FlowCoordinator.swift in Sources */,
 				7A386FF52334B38E00B7BADE /* DateFormatter+.swift in Sources */,
-				7A6FDA0E23F5DB7200875CE9 /* QAnimatedButton.swift in Sources */,
 				7A386FEC2333A66600B7BADE /* UIColor+.swift in Sources */,
 				7A2B8847233CD6AF00996E09 /* ViewControllerStyleable.swift in Sources */,
 				7A3870012334C23800B7BADE /* Logger.swift in Sources */,
@@ -349,10 +355,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A3870052334CBB400B7BADE /* UnderKeyboardLayoutConstraint.swift in Sources */,
 				7A386FF92334B8EB00B7BADE /* Reusable.swift in Sources */,
 				7A386FE023339F3400B7BADE /* QExtensionsTests.swift in Sources */,
-				7A700A0E2334ED1B0075B5EA /* CustomLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
