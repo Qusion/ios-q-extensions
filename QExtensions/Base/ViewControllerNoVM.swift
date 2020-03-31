@@ -9,13 +9,15 @@
 extension QBase {
     
     /// Empty class for ViewControllerNoVM
-    public struct NoViewModel {}
+    public struct NoViewModel {
+        public init() {}
+    }
     
     /// QBase VC with no VM
     open class ViewControllerNoVM: QBase.ViewController<NoViewModel> {
         
         public init() {
-            super.init(viewModel: QBase.NoViewModel())
+            super.init(viewModel: NoViewModel())
         }
         
         required public init?(coder aDecoder: NSCoder) {
