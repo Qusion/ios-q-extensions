@@ -95,7 +95,7 @@ extension QBase {
         // MARK: - Child coordinators
         
         public func addChild(_ flowController: FlowCoordinator) {
-            if !childCoordinators.contains { $0 === flowController } {
+            if !childCoordinators.contains(where: { $0 === flowController }) {
                 childCoordinators.append(flowController)
                 flowController.parentCoordinator = self
             }
