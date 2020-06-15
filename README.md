@@ -5,6 +5,7 @@
 [![Version](https://img.shields.io/cocoapods/v/QExtensions.svg?style=flat)](http://cocoapods.org/pods/QExtensions)
 [![License](https://img.shields.io/cocoapods/l/QExtensions.svg?style=flat)](http://cocoapods.org/pods/QExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/QExtensions.svg?style=flat)](http://cocoapods.org/pods/QExtensions)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 Swift common classes and extensions use at Qusion.
 
