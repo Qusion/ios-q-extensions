@@ -6,6 +6,8 @@
 //  Copyright © 2019 Qusion. All rights reserved.
 //
 
+import UIKit
+
 extension QBase {
     
     /// Empty class for ViewControllerNoVM

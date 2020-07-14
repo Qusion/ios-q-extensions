@@ -6,6 +6,8 @@
 //  Copyright © 2020 Qusion. All rights reserved.
 //
 
+import UIKit
+
 extension QBase {
     
     open class AnimatedButton: UIButton {
