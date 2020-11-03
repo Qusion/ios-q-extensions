@@ -36,12 +36,14 @@ extension QBase {
         
         let backgroundColor: UIColor
         let preferredStatusBarStyle: UIStatusBarStyle
+        let isHiddenNavigationBottomLine: Bool
         let attributesForStyle: (_ style: TextStyle) -> TextAttributes
         
-        public init(backgroundColor: UIColor, preferredStatusBarStyle: UIStatusBarStyle = .default, attributesForStyle: @escaping (_ style: TextStyle) -> TextAttributes) {
+        public init(backgroundColor: UIColor, preferredStatusBarStyle: UIStatusBarStyle = .default, attributesForStyle: @escaping (_ style: TextStyle) -> TextAttributes, isHiddenNavigationBottomLine: Bool = true) {
             self.backgroundColor = backgroundColor
             self.preferredStatusBarStyle = preferredStatusBarStyle
             self.attributesForStyle = attributesForStyle
+            self.isHiddenNavigationBottomLine = isHiddenNavigationBottomLine
         }
         
         // MARK: NavigationBar
@@ -62,6 +64,8 @@ extension QBase {
             navigationBar.backgroundColor = attributes.backgroundColor
             
             navigationBar.isTranslucent = false
+            
+            navigationBar.shadowImage = isHiddenNavigationBottomLine ? UIImage() : nil
         }
         
         // MARK: TabBar
